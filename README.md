@@ -27,6 +27,7 @@ The goal of this repository is to document practical Kubernetes troubleshooting 
 
 ## Repository Structure
 
+```text
 kubernetes-troubleshooting-lab/
 ├── README.md
 ├── crashloopbackoff/
@@ -39,6 +40,7 @@ kubernetes-troubleshooting-lab/
 │   └── README.md
 └── ingress-issues/
     └── README.md
+```
 
 ## Disclaimer
 
