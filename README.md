@@ -45,4 +45,3 @@ kubernetes-troubleshooting-lab/
 ## Disclaimer
 
 All examples are based on lab environments and do not contain any customer or proprietary information.
-```
