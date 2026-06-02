@@ -7,10 +7,10 @@ This repository contains common Kubernetes troubleshooting scenarios, investigat
 | Scenario | Status |
 |-----------|----------|
 | Node NotReady | ✅ |
-| ImagePullBackOff | 🚧 |
-| CrashLoopBackOff | 🚧 |
-| Certificate Expiry | 🚧 |
-| Ingress Issues | 🚧 |
+| ImagePullBackOff | ✅ |
+| CrashLoopBackOff | ✅ |
+| Certificate Expiry | ✅ |
+| Ingress Issues | ✅ |
 
 ## Objective
 
@@ -27,10 +27,18 @@ The goal of this repository is to document practical Kubernetes troubleshooting 
 
 ## Repository Structure
 
-```text
-node-notready/
-└── README.md
-```
+kubernetes-troubleshooting-lab/
+├── README.md
+├── crashloopbackoff/
+│   └── README.md
+├── imagepullbackoff/
+│   └── README.md
+├── node-notready/
+│   └── README.md
+├── certificate-expiry/
+│   └── README.md
+└── ingress-issues/
+    └── README.md
 
 ## Disclaimer
 
