@@ -2,6 +2,10 @@
 
 This repository contains common Kubernetes troubleshooting scenarios, investigation steps, root cause analysis, and resolutions.
 
+## Objective
+
+The goal of this repository is to document practical Kubernetes troubleshooting scenarios and provide structured investigation, root cause analysis, and resolution procedures commonly encountered in production environments.
+
 ## Troubleshooting Scenarios
 
 | Scenario | Status |
