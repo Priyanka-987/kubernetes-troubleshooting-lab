@@ -1,45 +1,61 @@
-# Node NotReady Troubleshooting
+# ImagePullBackOff Troubleshooting
 
 ## Symptoms
 
 ```bash
-kubectl get nodes
+kubectl get pods
 ```
 
-Output:
+Example Output:
 
 ```text
-worker01    NotReady
+nginx-app   0/1   ImagePullBackOff
 ```
 
 ## Investigation
 
+Describe the pod:
+
 ```bash
-kubectl describe node worker01
+kubectl describe pod nginx-app
 ```
 
-Check:
-- Kubelet status
-- Disk pressure
-- Memory pressure
-- Network connectivity
+Check events:
 
-## Root Cause
+```bash
+kubectl get events --sort-by=.metadata.creationTimestamp
+```
 
-Kubelet service stopped unexpectedly.
+Verify image name:
+
+```bash
+kubectl get deployment nginx-app -o yaml
+```
+
+## Possible Causes
+
+* Incorrect image name
+* Incorrect image tag
+* Private registry authentication issue
+* Registry connectivity issue
+* Image does not exist
 
 ## Resolution
 
+Update deployment image:
+
 ```bash
-sudo systemctl restart kubelet
+kubectl set image deployment/nginx-app nginx=nginx:latest
 ```
 
 Verify:
 
 ```bash
-kubectl get nodes
+kubectl get pods
 ```
 
 ## Lessons Learned
 
-Monitor kubelet health and node resources.
+* Verify image names and tags before deployment.
+* Configure imagePullSecrets for private registries.
+* Test registry connectivity.
