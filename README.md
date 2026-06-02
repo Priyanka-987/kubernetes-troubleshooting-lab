@@ -41,6 +41,16 @@ kubernetes-troubleshooting-lab/
 └── ingress-issues/
     └── README.md
 ```
+## Skills Demonstrated
+
+- Kubernetes Troubleshooting
+- Linux Administration
+- Root Cause Analysis
+- Certificate Management
+- Container Troubleshooting
+- Ingress Troubleshooting
+- Production Support Methodology
+- Incident Investigation
 
 ## Disclaimer
 
